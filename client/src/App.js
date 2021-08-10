@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import TopBar from './Topbar/Topbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Blog Aoo </h1>
-    </div>
+   <TopBar/>
   );
 }
 
