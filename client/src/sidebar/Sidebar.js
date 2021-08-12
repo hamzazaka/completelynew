@@ -28,11 +28,11 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle"></span>
         <ul className="sidebarList">
-          {cats.map((c) => (
+          {/* {cats.map((c) => (
             <Link to={`/?cat=${c.name}`} className="link">
             <li className="sidebarListItem">{c.name}</li>
             </Link>
-          ))}
+          ))} */}
         </ul>
       </div>
       <div className="sidebarItem">
