@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../context/Context"
 import "./topbar.css";
+import img from './img1.png'
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
@@ -13,10 +14,12 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i className="topIcon fab fa-facebook-square"></i>
+        {/* <i className="topIcon fab fa-facebook-square"></i>
         <i className="topIcon fab fa-twitter-square"></i>
         <i className="topIcon fab fa-pinterest-square"></i>
-        <i className="topIcon fab fa-instagram-square"></i>
+        <i className="topIcon fab fa-instagram-square"></i> */}
+        {/* <img className='topImg' src={img} alt='HASH MAP' ></img> */}
+        <h2>HASH MAP</h2>
       </div>
       <div className="topCenter">
         <ul className="topList">
@@ -48,7 +51,7 @@ export default function TopBar() {
       <div className="topRight">
         {user ? (
           <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
+            <img className="topImg" src='https://images.unsplash.com/photo-1497316730643-415fac54a2af?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60' alt="" />
           </Link>
         ) : (
           <ul className="topList">
